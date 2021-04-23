@@ -1,0 +1,443 @@
+@import "colors.css";
+
+@font-face {
+  font-family: 'bootstrap-icons';
+  src: url('fonts/bootstrap-icons.woff2') format('woff2'),
+       url('fonts/bootstrap-icons.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  overflow-y: hidden;
+}
+
+header {
+  width: 100%;
+  height: 48px;
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-icon-cont,
+.apple-logo-cont, 
+.shopping-bag-icon-cont {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.8;
+  transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.menu-icon-cont:hover,
+.apple-logo-cont:hover, 
+.shopping-bag-icon-cont:hover {
+  opacity: 1;
+  transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  cursor: pointer;
+}
+
+
+.bi-list {
+    font-size: 1.3rem;
+    color: white;
+}
+
+.apple-logo-cont img {
+  height: 100%;
+  width: 100%;
+}
+
+.content-header-ipodtouch {
+  height: 48px;
+  width: 100%;
+  padding: 0 16px;
+  border-bottom: 1px solid rgb(216,212,212);
+  display: flex;
+  align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 255, 255, .78);
+  -webkit-backdrop-filter: blur(23px);
+  backdrop-filter: blur(23px);
+  z-index: 99;
+}
+
+.content-header-title {
+  font-size: 19px;
+  text-decoration: none;
+  color: #000;
+}
+
+.content-header-actions, .content-header-title {
+  flex: 1;
+}
+
+.content-header-actions {
+  /*height: 44px;
+  width: 147px;
+  padding: 16px 16px 0 16px;*/
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.chevron-down-cont {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  opacity: 0.8;
+  transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  /*background-color: wheat;*/
+}
+
+.chevron-hover-box:hover,
+.bi-chevron-down:hover {
+  opacity: 1;
+  cursor: pointer;
+  transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.bi-chevron-down {
+  /*background-color: dodgerblue;*/
+  position: absolute;
+  z-index: 3;
+}
+
+button.buy {
+  background-color: var(--accent-button);
+  border-style: none;
+  width: 45px;
+  height: 24px;
+  font-size: 12px;
+  color: white;
+  border-radius: 12px;
+}
+
+button.buy:hover {
+  cursor: pointer;
+  background-color: var(--accent-button-hover);
+}
+
+.chevron-hover-box {
+  height: 30px;
+  width: 40px;
+  /*background-color: firebrick;*/
+  position: relative;
+  top: 3px;
+}
+
+.hero {
+  width: 100%;
+  /*background-color: coral;*/
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  /*position: relative;*/
+}
+
+.hero h1 {
+  font-size: 24px;
+  margin-bottom: 9px;
+  font-weight: normal;
+}
+
+.hero h2 {
+  font-size: 48px;
+  color: 111;
+  padding: 0 16px;
+  line-height: 52px;
+}
+
+.hero p {
+  font-size: 21px;
+  padding-top: 30px;
+  color: #333;
+}
+
+.hero .image-container {
+  margin-top: 80px;
+  object-fit: contain;
+  height: 150px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero .image-hero {
+  width: 414px;
+  height: 150px;
+  /*background-color: blue;*/
+  background-image: url(./images/ipods-hero-small.jpg);
+  background-size: 414px 150px;
+  display: block;
+  position: absolute;
+}
+
+.music {
+  width: 100%;
+  background-color: #fafafa;
+  padding-top: 80px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headline {
+  font-size: 40px;
+  font-weight: 600;
+  padding: 0 16px;
+}
+
+.intro {
+  width: 90%;
+  line-height: 27px;
+  margin-top: 15px;
+  color: #515151;
+  font-size: 18px;
+}
+
+.intro .sup {
+  text-decoration: none;
+  color: inherit;
+}
+
+.intro .sup:hover {
+  color: var(--accent);
+}
+
+.learn-more {
+  margin-top: 15px;
+  font-size: 18px;
+  text-decoration: none;
+  color: var(--accent);
+}
+
+.learn-more:hover {
+  text-decoration: underline;
+}
+
+.learn-more .bi-chevron-right {
+  font-size: 14px;
+  padding-left: 2px;
+}
+
+sup {
+  vertical-align: top;
+  font-size: 0.7em;
+  position: relative;
+  top: -0.5em;
+}
+
+.music .image-container {
+  margin-top: 40px;
+  object-fit: contain;
+  height: 360px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  /*background-color: indianred;*/
+}
+
+.image-container .image-music {
+  width: 735px;
+  height: 360px;
+  background-color: blue;
+  background-image: url(./images/music_hero.jpg);
+  background-size: 735px 360px;
+  display: block;
+  position: absolute;
+}
+
+
+
+footer {
+  width: 100%;
+  /*height: 806px;*/
+  padding: 0 16px;
+  background-color: #f5f5f7;
+  font-size: 12px;
+}
+
+footer .footnotes ol {
+  padding: 0 17px;
+}
+
+footer li {
+  margin-bottom: 10px;
+}
+
+footer ul {
+  list-style: none;
+}
+
+.footnotes {
+  width: 100%;
+  padding: 17px 0 11px 0;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--medium-grey);
+  border-bottom: 1px solid rgb(216,212,212);
+}
+
+footer a {
+  color: var(--darker-grey);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--almost-black);
+  text-decoration: underline;
+}
+
+.breadcrumbs {
+  padding: 17px 0;
+  width: 100%;
+  padding: 17px 0;
+  color: var(--darker-grey);
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--lightest-grey);
+  /*background-color: khaki;*/
+}
+
+.breadcrumbs-home-icon {
+  font-size: 16px;
+}
+
+.breadcrumbs ol {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: lavender;*/
+  padding: 0;
+  list-style-type: none;
+}
+
+.breadcrumbs li {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0 7px 0 0;
+}
+
+.breadcrumbs-home-icon {
+  margin-right: 7px;
+}
+
+.breadcrumbs-home-icon:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.breadcrumbs-item i {
+  margin-right: 6px;
+  font-size: 16px;
+  color: var(--lightest-grey);
+}
+
+.directory-column-section-title {
+  padding: 10px 0;
+  font-size: 12px;
+  font-weight:lighter;
+  color: var(--almost-black);
+  border-bottom: 1px solid var(--lightest-grey);
+}
+
+.directory-column a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.directory-column-section-title:after {
+  content: '+';
+  float: right;
+  font-size: 14px;
+  font-weight: normal;
+  margin-top: -2px;
+  margin-right: 8px;
+  color: var(--almost-black);
+}
+
+.footer-footer {
+  width: 100%;
+  /*background-color: dodgerblue;*/
+  padding: 17px 0 19px 0;
+  line-height: 16px;
+  color: var(--medium-grey)
+}
+
+.footer-shop {
+  padding-bottom: 7px;
+  margin-bottom: 7px;
+}
+
+.footer-shop a {
+  color: var(--accent-footer);
+}
+
+.footer-shop a:hover {
+  color: var(--accent-footer);
+}
+
+.footer-locale {
+  padding-top: 5px;
+  margin-top: 5px;
+  color: var(--darker-grey);
+}
+
+.footer-locale:hover {
+  color: var(--almost-black);
+}
+
+
+.footer-legal {
+  padding-top: 12px;
+}
+
+.footer-legal-copyright {
+  margin-top: 5px;
+}
+
+.footer-legal-links {
+  margin-top: 8px;
+  padding-bottom: 4px;
+  line-height: 20px;
+}
+
+.footer-legal-link {
+  margin: 5px 7px 0 0;
+  padding-right: 10px;
+  border-right: 1px solid var(--lightest-grey);
+}
+
+.footer-legal-links .footer-legal-link:nth-last-of-type(1) {
+  border-right: none;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
