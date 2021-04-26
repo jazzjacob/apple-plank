@@ -1,0 +1,87 @@
+.music {
+  width: 100%;
+  background-color: #fafafa;
+  padding-top: 80px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.music-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 85%;
+}
+
+.headline {
+  font-size: 40px;
+  font-weight: 600;
+  padding: 0 16px;
+}
+
+.intro {
+  line-height: 27px;
+  margin-top: 15px;
+  color: #515151;
+  font-size: 18px;
+}
+
+.intro .sup {
+  text-decoration: none;
+  color: inherit;
+}
+
+.intro .sup:hover {
+  color: var(--accent);
+}
+
+.learn-more {
+  margin-top: 15px;
+  font-size: 18px;
+  text-decoration: none;
+  color: var(--accent);
+}
+
+.learn-more:hover {
+  text-decoration: underline;
+}
+
+.learn-more .bi-chevron-right {
+  font-size: 14px;
+  padding-left: 2px;
+}
+
+.music .image-container {
+  margin-top: 40px;
+  object-fit: contain;
+  height: 360px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.image-container .image-music {
+  width: 735px;
+  height: 360px;
+  background-image: url(../images/music_hero.jpg);
+  background-size: 735px 360px;
+  display: block;
+  position: absolute;
+}
+
+
+@media screen and (min-width: 736px) {
+  .music {
+    padding-top: 120px;
+  }
+
+  .music-content {
+    width: 692px;
+  }
+
+}
