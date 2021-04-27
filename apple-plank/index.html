@@ -11,32 +11,40 @@
 </head>
 <body>
   <header>
-    <div class="menu-icon-cont">
-      <i class="bi bi-list"></i>
-    </div>
-    <div class="apple-logo-cont">
-      <img src="./images/apple-logo.svg">
-    </div>
-    <div class="shopping-bag-icon-cont">
-      <img src="./images/shopping-bag.svg">
-    </div>
+    <ul>
+      <li class="menu-icon-cont"><i class="bi bi-list"></i></li>
+      <li class="apple-logo-cont"><img src="./images/apple-logo.svg" alt="apple logo"></li>
+      <li class="menu-item-container"><a href="#" class="menu-item">Mac</a></li>
+      <li class="menu-item-container"><a href="#" class="menu-item">iPad</a></li>
+      <li class="menu-item-container"><a href="#" class="menu-item">iPhone</a></li>
+      <li class="menu-item-container"><a href="#" class="menu-item">Watch</a></li>
+      <li class="menu-item-container"><a href="#" class="menu-item">TV</a></li>
+      <li class="menu-item-container"><a href="#" class="menu-item menu-item-active">Music</a></li>
+      <li class="menu-item-container"><a href="#" class="menu-item">Support</a></li>
+      <li class="search-icon-container"><i class="bi bi-search"></i></li>
+      <li class="shopping-bag-icon-cont"><img src="./images/shopping-bag.svg" alt="shopping-cart"></li>
+    </ul>
   </header>
 
   <main>
     <section class="content-header-ipodtouch">
-      <a href="#"class="content-header-title">iPod Touch</a>
-      <div class="content-header-actions">
-        <div class="chevron-down-cont">
-          <i class="bi bi-chevron-down"></i>
-          <div class="chevron-hover-box">
+      <ul>
+        <a href="#" class="content-header-title">iPod touch</a>
+        <div class="content-header-actions">
+          <div class="chevron-down-cont">
+            <i class="bi bi-chevron-down"></i>
           </div>
+          <nav class="content-header-links">
+            <a>Overview</a>
+            <a>Tech Specs</a>
+          </nav>
+          <button class="buy" type="button">Buy</button>
         </div>
-        <a href="#"><button class="buy">Buy</button></a>
-      </div>
+      </ul>
     </section>
 
     <section class="hero">
-      <h1>The new iPod Touch</h1>
+      <h1>The new iPod touch</h1>
       <h2>Fun at full speed.</h2>
       <p>Starting at $199</p>
       <div class="image-container">
@@ -45,17 +53,20 @@
     </section>
 
     <section class="music">
-      <h2 class="headline">Your music,<br>wherever you go.</h2>
-      <p class="intro">
-        Love music? You can keep more songs than ever on iPod&nbsp;touch, which now comes with up to 256GB of storage.<sup><a href="#footnote-1" class="sup">1</a></sup> Get an Apple&nbsp;Music subscription to stream over 70 million songs and download your favorites. Or load iPod&nbsp;touch with songs you love from the iTunes&nbsp;Store.
-      </p>
-      <a href="#" class="learn-more">Learn more about Apple Music<i class="bi bi-chevron-right"></i></a>
-      <div class="image-container">
-        <figure class="image-music"></figure>
+      <div class="music-content">
+        <h2 class="headline">Your music,<br>wherever you go.</h2>
+        <p class="intro">
+          Love music? You can keep more songs than ever on iPod&nbsp;touch, which now comes with up to 256GB of storage.<sup><a href="#footnote-1" class="sup">1</a></sup> Get an Apple&nbsp;Music subscription to stream over 70 million songs and download your favorites. Or load iPod&nbsp;touch with songs you love from the iTunes&nbsp;Store.
+        </p>
+        <a href="#" class="learn-more">Learn more about Apple Music<i class="bi bi-chevron-right"></i></a>
+        <div class="image-container">
+          <figure class="image-music"></figure>
+        </div>
       </div>
     </section>
 
     <footer>
+      <div class="footer-content">
       <section class="footnotes">
         <ol>
           <li id="footnote-1">
@@ -103,6 +114,42 @@
               Shop and Learn
             </h3>
           </a>
+            <ul class="directory-column-section-list">
+              <li class="directory-column-section-item">
+                <a href="#">Mac</a>
+              </li>
+              <li class="directory-column-section-item">
+                <a href="#">iPad</a>
+              </li>
+              <li class="directory-column-section-item">
+                <a href="#">iPhone</a>
+              </li>
+              <li class="directory-column-section-item">
+                <a href="#">Watch</a>
+              </li>
+              <li class="directory-column-section-item">
+                <a href="#">TV</a>
+              </li>
+              <li class="directory-column-section-item">
+                <a href="#">Music</a>
+              </li>
+              <li class="directory-column-section-item">
+                <a href="#">AirPods</a>
+              </li>
+              <li class="directory-column-section-item">
+                <a href="#">HomePod</a>
+              </li>
+              <li class="directory-column-section-item">
+                <a href="#">iPod Touch</a>
+              </li>
+              <li class="directory-column-section-item">
+                <a href="#">Accessories</a>
+              </li>
+              <li class="directory-column-section-item">
+                <a href="#">Gift Cards</a> 
+              </li>
+            </ul>
+
         </div>
 
         <div class="directory-column">
@@ -111,11 +158,73 @@
               Services
             </h3>
           </a>
+          <ul class="directory-column-section-list">
+            <li class="directory-column-section-item">
+              <a href="#">Apple Music</a>
+            </li>
+            <li class="directory-column-section-item">
+              <a href="#">Apple TV+</a>
+            </li>
+            <li class="directory-column-section-item">
+              <a href="#">iCloud</a>
+            </li>
+          </ul>
           <a href="#" class="directory-column-section">
             <h3 class="directory-column-section-title">
               Account
             </h3>
           </a>
+          <ul class="directory-column-section-list">
+            <li class="directory-column-section-item">
+              <a href="#">Manage Your Apple ID</a>
+            </li>
+            <li class="directory-column-section-item">
+              <a href="#">Apple Store Account</a>
+            </li>
+            <li class="directory-column-section-item">
+              <a href="#">iCloud.com</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="directory-column">
+          <a href="#" class="directory-column-section">
+            <h3 class="directory-column-section-title">
+              Apple Store
+            </h3>
+          </a>
+          <ul class="directory-column-section-list">
+            <li class="directory-column-section-item">
+              <a href="#">Find a Store</a>
+            </li>
+            <li class="directory-column-section-item">
+              <a href="#">Shop Online</a>
+            </li>
+            <li class="directory-column-section-item">
+              <a href="#">Genius Bar</a>
+            </li>
+            <li class="directory-column-section-item">
+              <a href="#">Today at Apple</a>
+            </li>
+            <li class="directory-column-section-item">
+              <a href="#">Apple Camp</a>
+            </li>
+            <li class="directory-column-section-item">
+              <a href="#">Suh Dude</a>
+            </li>
+            <li class="directory-column-section-item">
+              <a href="#">I am Currently</a>
+            </li>
+            <li class="directory-column-section-item">
+              <a href="#">Listening to Phoenix</a>
+            </li>
+            <li class="directory-column-section-item">
+              <a href="#">Live From New York City</a>
+            </li>
+            <li class="directory-column-section-item">
+              <a href="#">And it Sounds Good</a>
+            </li>
+          </ul>
         </div>
 
         <div class="directory-column">
@@ -124,21 +233,44 @@
               For Business
             </h3>
           </a>
+          <ul class="directory-column-section-list">
+            <li class="directory-column-section-item">
+              <a href="#">Apple and Business</a>
+            </li>
+            <li class="directory-column-section-item">
+              <a href="#">Shop for Business</a>
+            </li>
+          </ul>
           <a href="#" class="directory-column-section">
             <h3 class="directory-column-section-title">
               For Education
             </h3>
           </a>
+          <ul class="directory-column-section-list">
+            <li class="directory-column-section-item">
+              <a href="#">Apple and Education</a>
+            </li>
+          </ul>
           <a href="#" class="directory-column-section">
             <h3 class="directory-column-section-title">
               For Healthcare
             </h3>
           </a>
+            <ul class="directory-column-section-list">
+              <li class="directory-column-section-item">
+                <a href="#">Apple in Healthcare</a>
+              </li>
+            </ul>
           <a href="#" class="directory-column-section">
             <h3 class="directory-column-section-title">
               For Government
             </h3>
           </a>
+          <ul class="directory-column-section-list">
+            <li class="directory-column-section-item">
+              <a href="#">Shop for Government</a>
+            </li>
+          </ul>
         </div>
 
         <div class="directory-column">
@@ -147,11 +279,34 @@
               Apple Values
             </h3>
           </a>
+          <ul class="directory-column-section-list">
+            <li class="directory-column-section-item">
+              <a href="#">Accessibility</a>
+            </li>
+            <li class="directory-column-section-item">
+              <a href="#">Education</a>
+            </li>
+            <li class="directory-column-section-item">
+              <a href="#">Environment</a>
+            </li>
+          </ul>
+
           <a href="#" class="directory-column-section">
             <h3 class="directory-column-section-title">
               About Apple
             </h3>
           </a>
+          <ul class="directory-column-section-list">
+            <li class="directory-column-section-item">
+              <a href="#">Apple Leadership</a>
+            </li>
+            <li class="directory-column-section-item">
+              <a href="#">Job Opportunities</a>
+            </li>
+            <li class="directory-column-section-item">
+              <a href="#">Ethics and Compliance</a>
+            </li>
+          </ul>
         </div>
       </nav>
 
@@ -169,7 +324,7 @@
           </div>
         </div>
       </section>
-
+      </div>
     </footer>
 
   </main>

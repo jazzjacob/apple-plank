@@ -8,4 +8,6 @@
   --accent-button-hover: #137ce5;
   --accent: #0070c9;
   --accent-footer: #0166cc;
+
+  --medium-breakpoint: 744px;
 }
